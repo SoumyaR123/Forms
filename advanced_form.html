@@ -1,0 +1,138 @@
+ <html>
+    <head>
+        <title>Advanced Form</title>
+        <style>
+            body{
+                background-color:rgb(232, 196, 151);
+            }
+            h3{
+                color:green;
+                font-size:40px;
+                text-shadow:5px 2px 5px red,-5px -2px 5px black;
+            }
+            form{
+                background-color:red;
+                padding:30px;
+                border:3px solid blue;
+                min-width:100px;
+                max-width:70%;
+                margin:30px;
+                margin-bottom:50px;
+            }
+            label{
+                color:rgb(0, 255, 42);
+            }
+            td{
+                padding-bottom:20px;
+            }
+            .btns{
+                background-color:green;
+                color:white;
+                font-size:20px;
+                padding:10px 20px;
+                margin:10px;
+           }
+        </style>
+    </head>
+    <body>
+        <form methord="post">
+            <marquee behavior="alternate" scrollamount="15" bgcolor="white" height="100px">
+               <h3>Fill form data</h3>
+            </marquee>
+            <table>
+                <tr>
+                    <th> <label>Ename:</label></th>
+                    <td><input type="text" name="name"></td>
+                </tr>
+
+                <tr>
+                    <th> <label>Email:</label></th>
+                    <td><input type="email" name="Email"></td>
+                </tr>
+                <tr>
+                    <th> <label>Ename:</label></th>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <th> <label>Joining Date:</label></th>
+                    <td><input type="date" name="Jdate"></td>
+                </tr>
+                <tr>
+                    <th> <label>Login Time:</label></th>
+                    <td><input type="time" name="Ltitme"></td>
+                </tr>
+                <tr>
+                    <th> <label>Date and Birth:</label></th>
+                    <td><input type="datetime-local" name="bdatetime"></td>
+                </tr>
+                <tr>
+                    <th> <label>Select your <mark>company name</mark>:</label></th>
+                    <td>
+                        <select name="comapny">
+                            <option value="tcs">TCS</option>
+                            <option value="ibm">IBM</option>
+                            <option value="microfocus">MICROFOCUS</option>
+                            <option value="capgemini">CAPGEMINI</option>
+                            <option value="unext">UNEXT</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label>Select gender:</label></th>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="femalee">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label>Select gender:</label></th>
+                    <td>
+                        <input type="checkbox" name="location" value="hyderabad">Hyderabad
+                        <input type="checkbox" name="location" value="bangalore">Bangalore
+                        <input type="checkbox" name="location" value="pune">Pune
+                        <input type="checkbox" name="location" value="other">Other
+                    </td>
+                </tr>
+                 <tr>
+                    <th><label>select your <strong> qualification</strong></label></th>
+                    <td>
+                        <input list="qualification">
+                        <datalist id="qualification">
+                            <option>B-tech</option>
+                            <option>M-tech</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <th> Upload your resume:</th>
+                    <td><input type="file" name="resume"></td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend align="center">Personal information</legend>
+                <table>
+                    <tr>
+                        <th>Father name:</th>
+                        <td><input type="type" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <th>Mother name:</th>
+                        <td><input type="text" name="mname"></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile number</th>
+                        <td><input type="number" name="Mobile numbare"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div style="margin-left: 150px">
+                <input type="Submit" value="send" class="btns">
+                <input type="Reset" value="clear" class="btns">
+            </div>
+        </form>
+    </body>
+</html>
